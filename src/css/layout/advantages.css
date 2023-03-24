@@ -4,9 +4,6 @@
   background-color: var(--bgd-clr);
 }
 
-.container {
-}
-
 .advantage-list {
 }
 
@@ -30,7 +27,6 @@
 .advantage-img {
   width: 32px;
   height: 32px;
-  fill: var(--brand-clr);
 }
 
 .advantage-subtitle {
