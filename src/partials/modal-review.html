@@ -1,3 +1,40 @@
-<div>
-    <h1>Modal Rewiew</h1>
+<!-- <div class="backdrop"> -->
+<div class="modal-review">
+  <svg style="stroke: black">
+    <use href="../images/icon.svg#icon-close"></use>
+  </svg>
+  <h2>LEAVE A REVIEW ABOUT <span class="title-brand">OUR CHOCOLATE</span></h2>
+  <form>
+    <label>
+      <input
+        type="text"
+        name="username"
+        placeholder="Name"
+        required
+        pattern="[a-zA-Z]{2,15}"
+      />
+    </label>
+    <label>
+      <input type="email" name="useremail" placeholder="Email" required />
+    </label>
+    <label></label>
+    <div>
+      <input
+        type="tel"
+        name="userphone"
+        placeholder="Phone number"
+        required
+        pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="xx-xxx-xx-xx"
+      />
+      <svg width="32" height="24">
+        <use href="../images/icon.svg#icon-flag"></use>
+      </svg>
+      <p>+380</p>
+    </div>
+
+    <textarea name="Comment" placeholder="Enter text"></textarea>
+    <button type="submit" class="btn-primary">Send</button>
+  </form>
 </div>
+<!-- </div> -->
