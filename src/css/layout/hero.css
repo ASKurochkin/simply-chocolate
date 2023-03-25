@@ -1,0 +1,58 @@
+.hero-section {
+  padding-top: 395px;
+  padding-bottom: 21px;
+  background-color: var(--bgd-clr);
+  background-image: url(/images/hero/hero-bg-mobile-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1136px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url(/images/hero/hero-bg-mobile@2x.jpg);
+  }
+}
+
+.hero-container {
+}
+
+.hero-subtitle {
+  color: var(--secondary-clr);
+  margin-bottom: 32px;
+}
+
+.hero-btn-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.hero-main-btn {
+}
+
+.hero-scndry-btn {
+}
+
+.hero-scroll-btn {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: -0.03em;
+  color: var(--secondary-clr);
+}
+
+.hero-scroll-icon {
+  width: 28px;
+  height: 28px;
+  background-color: var(--bgd-body-clr);
+  border-radius: 50%;
+  margin-left: 12px;
+  fill: var(--brand-clr);
+}
+
+.hero-scroll-box {
+}
