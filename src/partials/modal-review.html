@@ -1,30 +1,29 @@
 <!-- <div class="backdrop"> -->
 <div class="modal-review">
-  <svg style="stroke: black" width="24" height="24">
-    <use href="../images/icon.svg#icon-close"></use>
-  </svg>
   <h2 class="section-title">
     leave a review about <span class="title-brand">our chocolate</span>
   </h2>
+  <button type="button">
+    <svg style="stroke: black" width="24" height="24">
+      <use href="../images/icon.svg#icon-close"></use>
+    </svg>
+  </button>
+
   <form>
-    <label>
-      <input
-        type="text"
-        name="username"
-        placeholder="Name"
-        required
-        pattern="[a-zA-Z]{2,15}"
-      />
-    </label>
-    <label>
-      <input
-        type="email"
-        name="useremail"
-        placeholder="Enter your email"
-        required
-      />
-    </label>
-    <label></label>
+    <input
+      type="text"
+      name="username"
+      placeholder="Name"
+      pattern="[a-zA-Z]{2,15}"
+    />
+
+    <input
+      type="email"
+      name="useremail"
+      placeholder="Enter your email"
+      required
+    />
+
     <div>
       <input
         type="tel"
@@ -40,7 +39,7 @@
       <p>+380</p>
     </div>
 
-    <textarea name="Comment" placeholder="Enter text"></textarea>
+    <textarea name="comment" placeholder="Enter text"></textarea>
     <button type="submit" class="btn-primary">Send</button>
   </form>
 </div>
