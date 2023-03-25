@@ -8,6 +8,9 @@
 
 /* Components */
 @import url('./components/container.css');
+@import url('./components/backdrop.css');
+@import url('./components/titles.css');
+@import url('./components/buttons.css');
 
 /* Layout */
 @import url('./layout/header-and-mob-menu.css');

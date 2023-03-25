@@ -1,0 +1,84 @@
+.btn-primary {
+  padding: 12px 28px;
+  height: 41px;
+  border-radius: 100px;
+  border: none;
+
+  font-weight: 600;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--secondary-clr);
+
+  background-color: var(--brand-clr);
+}
+
+@media screen and (min-width: 768px) {
+  .btn-primary {
+    padding: 14px 40px;
+    height: 45px;
+  }
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: var(--brand-clr);
+
+  background-color: var(--btn-secondary-clr);
+}
+
+.btn-second {
+  padding: 12px 28px;
+  height: 41px;
+  border-radius: 100px;
+  border: 1px solid var(--secondary-clr);
+
+  font-weight: 600;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--secondary-clr);
+
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-second {
+    padding: 14px 40px;
+    height: 45px;
+  }
+}
+
+.btn-second:hover,
+.btn-second:focus {
+  color: var(--brand-clr);
+
+  border: 1px solid var(--brand-clr);
+}
+
+.btn-third {
+  padding: 12px 28px;
+  height: 41px;
+  border-radius: 100px;
+  border: 1px solid var(--brand-clr);
+
+  font-weight: 600;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--primary-clr);
+
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-third {
+    padding: 14px 40px;
+    height: 45px;
+  }
+}
+
+.btn-third:hover,
+.btn-third:focus {
+  color: var(--secondary-clr);
+  background-color: var(--brand-clr);
+
+  border: none;
+}
