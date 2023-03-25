@@ -38,5 +38,13 @@
             <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4"
                 stroke-width="2.6667" d="M8 8l16 16"></path>
         </symbol>
+        <symbol id="icon-close" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M8 8l16 16"></path>
+</symbol>
+<symbol id="icon-flag" viewBox="0 0 43 32">
+<path fill="#ffd700" style="fill: var(--color4, #ffd700)" d="M42.443 0.523h-42.119v31.344h42.119v-31.344z"></path>
+<path fill="#0057b7" style="fill: var(--color5, #0057b7)" d="M0.324 0.523h42.119v15.672h-42.119v-15.672z"></path>
+</symbol>
     </defs>
 </svg>
