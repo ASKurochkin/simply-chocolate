@@ -1,3 +1,90 @@
-<section>
-    <h1>Top Sellers</h1>
+<section class="top-sellers">
+  <div class="top-sellers-container container">
+    <h2 class="section-title"><span class="title-brand">Top</span>Sellers</h2>
+    <ul class="top-sellers-list">
+      <li class="top-sellers-item">
+        <picture>
+          <source
+            srcset="
+              ../images/top-sellers/offeebean-mobile.jpg    1x,
+              ../images/top-sellers/offeebean-mobile@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ../images/top-sellers/offeebean-tablet.jpg    1x,
+              ../images/top-sellers/offeebean-tablet@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ../images/top-sellers/offeebean-desktop.jpg    1x,
+              ../images/top-sellers/offeebean-desktop@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="top-sellers-image"
+            src="../images/top-sellers/offeebean-mobile.jpg"
+            alt="Chocolate and coffee beans"
+          />
+        </picture>
+      </li>
+      <li class="top-sellers-item">
+        <picture>
+          <source
+            srcset="
+              ../images/top-sellers/nuts-raisins-mobile.jpg    1x,
+              ../images/top-sellers/nuts-raisins-mobile@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../images/top-sellers/nuts-raisins-tablet.jpg    1x,
+              ../images/top-sellers/nuts-raisins-tablet@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ../images/top-sellers/nuts-raisins-desktop.jpg    1x,
+              ../images/top-sellers/nuts-raisins-desktop@2x.jpg 2x
+            "
+          />
+          <img
+            class="top-sellers-image"
+            src="../images/top-sellers/nuts-raisins-mobile.jpg"
+            alt="Chocolate with nuts and raisins"
+          />
+        </picture>
+      </li>
+      <li class="top-sellers-item third-image">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ../images/top-sellers/hocolatesweet-desk.jpg 1x,
+              ../images/top-sellers/hocolatesweet-desk.jpg 2x
+            "
+          />
+          <img
+            class="top-sellers-image"
+            src="../images/top-sellers/hocolatesweet-desk.jpg"
+            alt="Chocolate with chocolate sweet on top"
+          />
+        </picture>
+      </li>
+    </ul>
+    <div class="top-sellers-box">
+      <p class="top-sellers-text">
+        Crazy enough chocolate originates from a bean just like the coffee bean
+        called Cacao. Cacao has been around for thousands of years and was first
+        discovered by the Native American tribe called the Mayans.
+      </p>
+      <button type="button" class="btn-primary">Buy now</button>
+    </div>
+  </div>
 </section>
