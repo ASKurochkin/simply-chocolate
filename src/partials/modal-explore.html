@@ -1,3 +1,46 @@
-<div>
-    <h1>Modal Explore</h1>
+<!-- <div class="backdrop"> -->
+<div class="modal-explore">
+  <picture>
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ../images/modal-explore/broken-chokolate-tablet.jpg    1x,
+        ../images/modal-explore/broken-chokolate-tablet@2x.jpg 2x
+      "
+      type="image/jpg"
+    />
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ../images/modal-explore/broken-chokolate-mobile.jpg    1x,
+        ../images/modal-explore/broken-chokolate-mobile@2x.jpg 2x
+      "
+      type="image/jpg"
+    />
+    <img
+      src="../images/modal-explore/broken-chokolate-mobile.jpg"
+      alt="broken chokolat"
+      width="311"
+      height="169"
+      loading="lazy"
+    />
+  </picture>
+  <svg>
+    <use href="../images/icon.svg#icon-close"></use>
+  </svg>
+  <h2 class="section-title">
+    Explore our<span class="title-brand">new chocolate</span>first!
+  </h2>
+  <form>
+    <div>
+      <input
+        type="email"
+        name="useremail"
+        placeholder="Enter your email"
+        required
+      />
+      <button class="btn-primary" type="submit">Submit</button></div
+    >
+  </form>
 </div>
+<!-- </div> -->
