@@ -146,17 +146,3 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* } */
-
-/* .slick-prev:before, .slick-next:before {
-    height: 40px;
-    font-family: 'slick';
-    font-size: 30px;
-    width: 40px;
-    line-height: 1;
-    opacity: .75;
-    color: darkred;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    display: block;
-} */
