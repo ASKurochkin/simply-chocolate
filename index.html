@@ -516,7 +516,7 @@
               title="Instagram"
             >
               <svg class="footer-soc-icon" width="24" height="24">
-                <use href="/simply-chocolate/assets/icon-bfd4fccd.svg#icon-instagram-footer"></use>
+                <use href="/simply-chocolate/assets/icon-9f58e07a.svg#icon-instagram-footer"></use>
               </svg>
             </a>
           </li>
@@ -528,7 +528,7 @@
               title="Twitter"
             >
               <svg class="footer-soc-icon" width="24" height="24">
-                <use href="/simply-chocolate/assets/icon-bfd4fccd.svg#icon-twitter-footer"></use>
+                <use href="/simply-chocolate/assets/icon-9f58e07a.svg#icon-twitter-footer"></use>
               </svg>
             </a>
           </li>
@@ -561,9 +561,166 @@
 
 
     <!-- Modal window Buy-now -->
+    <!-- <div class="backdrop"> -->
+<div class="modal-buy-now">
+  <h2 class="section-title"><span class="title-brand">buy</span>now</h2>
+  <button type="button">
+    <svg>
+      <use href="../images/icon.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <ul>
+    <li>
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../images/modal-buy-now/kinder-chocolate-tablet.jpg    1x,
+            ../images/modal-buy-now/kinder-chocolate-tablet@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ../images/modal-buy-now/kinder-chocolate-mobile.jpg    1x,
+            ../images/modal-buy-now/kinder-chocolate-mobile@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <img
+          src="../images/modal-buy-now/kinder-chocolate-mobile.jpg"
+          alt="chocolate pieces"
+          width="167"
+          height="148"
+          loading="lazy"
+        />
+      </picture>
+      <div><p>100g</p></div>
+    </li>
+    <li>
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../images/modal-buy-now/chocolate-milk-tablet.jpg    1x,
+            ../images/modal-buy-now/chocolate-milk-tablet@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ../images/modal-buy-now/chocolate-milk-mobile.jpg        1x,
+            ../images/modal-buy-now/chocolate-milk-mobile.jpg@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <img
+          src="../images/modal-buy-now/chocolate-milk-mobile.jpg"
+          alt="white and dark chocolate"
+          width="167"
+          height="148"
+          loading="lazy"
+        />
+      </picture>
+      <div><p>200g</p></div>
+    </li>
+    <li>
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../images/modal-buy-now/dark-chocolate-tablet.jpg    1x,
+            ../images/modal-buy-now/dark-chocolate-tablet@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ../images/modal-buy-now/dark-chocolate-mobile        1x,
+            ../images/modal-buy-now/dark-chocolate-mobile@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <img
+          src="../images/modal-buy-now/dark-chocolate-mobile.jpg"
+          alt="white and dark chocolate"
+          width="167"
+          height="148"
+          loading="lazy"
+        />
+      </picture>
+      <div><p>300g</p></div>
+    </li>
+  </ul>
+  <form class="modal-form-buy">
+    <label for="username">Personal information</label>
     <div>
-    <h1>Modal Buy</h1>
+      <input
+        id="username"
+        type="text"
+        name="username"
+        placeholder="Name"
+        required
+        pattern="[a-zA-Z]{2,15}"
+      />
+      <input
+        type="text"
+        name="usersurname"
+        placeholder="Surname"
+        pattern="[a-zA-Z]+"
+        minlength="2"
+      />
+    </div>
+    <label for="useremail">Email </label>
+    <input
+      id="useremail"
+      type="email"
+      name="useremail"
+      placeholder="Enter your email"
+      required
+    />
+    <label for="userphone">Phone number</label>
+    <div>
+      <input
+        id="userphone"
+        type="tel"
+        name="userphone"
+        placeholder="Phone number"
+        required
+        pattern="[0-9]{2}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
+        title="xx-xxx-xx-xx"
+      />
+      <svg width="32" height="24">
+        <use href="../images/icon.svg#icon-flag"></use>
+      </svg>
+      <p>+380</p>
+    </div>
+    <label for="usercard">Card number</label>
+    <div>
+      <input
+        id="usercard"
+        type="text"
+        name="usercard"
+        placeholder="Enter card"
+        required
+        pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+        title="xxxx-xxxx-xxxx-xxxx"
+      />
+      <svg width="30" height="18">
+        <use href="../images/icon.svg#icon-card"></use>
+      </svg>
+    </div>
+    <label for="feedback"> Comment </label>
+    <textarea name="Comment" id="feedback" placeholder="Enter text"></textarea>
+    <button type="submit" class="btn-primary">Submit</button>
+  </form>
 </div>
+<!-- </div> -->
+
 
     <!-- Modal window Thank-you-for-buy -->
     <!-- <div class="backdrop"> -->
