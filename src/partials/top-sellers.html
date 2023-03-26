@@ -1,13 +1,14 @@
 <section class="top-sellers">
   <div class="top-sellers-container container">
-    <h2 class="section-title"><span class="title-brand">Top</span>Sellers</h2>
+    <h2 class="section-title"><span class="title-brand">Top</span> Sellers</h2>
     <ul class="top-sellers-list">
       <li class="top-sellers-item">
-        <picture>
+        <picture class="top-sellers-picture">
           <source
+            media="(min-width: 1200px)"
             srcset="
-              ./images/top-sellers/coffeebean-mobile.jpg    1x,
-              ./images/top-sellers/coffeebean-mobile@2x.jpg 2x
+              ./images/top-sellers/coffeebean-desktop.jpg    1x,
+              ./images/top-sellers/coffeebean-desktop@2x.jpg 2x
             "
           />
           <source
@@ -18,10 +19,9 @@
             "
           />
           <source
-            media="(min-width: 1200px)"
             srcset="
-              ./images/top-sellers/coffeebean-desktop.jpg    1x,
-              ./images/top-sellers/coffeebean-desktop@2x.jpg 2x
+              ./images/top-sellers/coffeebean-mobile.jpg    1x,
+              ./images/top-sellers/coffeebean-mobile@2x.jpg 2x
             "
           />
           <img
@@ -30,13 +30,22 @@
             alt="Chocolate and coffee beans"
           />
         </picture>
+        <div class="top-sellers-text-wrapper">
+          <p class="top-sellers-text">
+            Crazy enough chocolate originates from a bean just like the coffee
+            bean called Cacao. Cacao has been around for thousands of years and
+            was first discovered by the Native American tribe called the Mayans.
+          </p>
+        </div>
       </li>
+
       <li class="top-sellers-item">
-        <picture>
+        <picture class="top-sellers-picture">
           <source
+            media="(min-width: 1200px)"
             srcset="
-              ./images/top-sellers/nuts-raisins-mobile.jpg    1x,
-              ./images/top-sellers/nuts-raisins-mobile@2x.jpg 2x
+              ./images/top-sellers/nuts-raisins-desktop.jpg    1x,
+              ./images/top-sellers/nuts-raisins-desktop@2x.jpg 2x
             "
           />
           <source
@@ -47,23 +56,29 @@
             "
           />
           <source
-            media="(min-width: 1200px)"
             srcset="
-              ./images/top-sellers/nuts-raisins-desktop.jpgb1x,
-              ./images/top-sellers/nuts-raisins-desktop@2x.jpg 2x
+              ./images/top-sellers/nuts-raisins-mobile.jpg    1x,
+              ./images/top-sellers/nuts-raisins-mobile@2x.jpg 2x
             "
           />
-
           <img
             class="top-sellers-image"
             src="./images/top-sellers/nuts-raisins-mobile.jpg"
             alt="Chocolate with nuts and raisins"
           />
         </picture>
+        <div class="top-sellers-info">
+          <div class="top-sellers-box">
+            <button type="button" class="btn-primary top-sellers-button">
+              Buy now
+            </button>
+          </div>
+        </div>
       </li>
       <li class="top-sellers-item third-image">
         <picture>
           <source
+            media="(min-width: 1200px)"
             srcset="
               ./images/top-sellers/chocolate-sweet-desktop.jpg    1x,
               ./images/top-sellers/chocolate-sweet-desktop@2x.jpg 2x
@@ -77,13 +92,5 @@
         </picture>
       </li>
     </ul>
-    <div class="top-sellers-box">
-      <p class="top-sellers-text">
-        Crazy enough chocolate originates from a bean just like the coffee bean
-        called Cacao. Cacao has been around for thousands of years and was first
-        discovered by the Native American tribe called the Mayans.
-      </p>
-      <button type="button" class="btn-primary"></button>
-    </div>
   </div>
 </section>
