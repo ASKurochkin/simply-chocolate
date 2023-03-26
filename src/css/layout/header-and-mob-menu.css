@@ -23,7 +23,8 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  padding-top: 6px;
+  padding-top: 20px;
+  padding-bottom: 14px;
 
   font-style: italic;
   font-weight: 700;
@@ -33,7 +34,8 @@
 
 @media screen and (min-width: 768px) {
   .logo {
-    padding-top: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -42,7 +44,8 @@
     font-size: 18px;
     line-height: 1.11;
 
-    padding-bottom: 8px;
+    padding-top: 19px;
+    padding-bottom: 29px;
   }
 }
 
