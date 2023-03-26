@@ -1,7 +1,13 @@
 .footer {
-    padding: 50px 0;
+    padding: 32px 0;
     background-color: var(--bgd-clr);
     color: var(--secondary-clr);
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 50px 0;
+    }
 }
 
 .footer-top {
@@ -95,7 +101,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .footer-bottom::before {
+    .footer-navigation::before {
         bottom: 24px;
     }
 }
