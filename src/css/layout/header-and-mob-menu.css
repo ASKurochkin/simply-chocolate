@@ -192,6 +192,10 @@
   height: 100%;
   background-color: var(--bgd-clr);
   z-index: 1;
+  padding-top: 136px;
+  padding-right: 46px;
+  padding-left: 50px;
+  padding-bottom: 136px;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -210,6 +214,10 @@
 @media screen and (min-width: 768px) {
   .mobile-menu {
     width: 290px;
+    padding-top: 156px;
+    padding-right: 81px;
+    padding-left: 85px;
+    padding-bottom: 156px;
   }
 }
 
@@ -267,22 +275,6 @@
 }
 
 /* mobile-menu-nav */
-
-.mobile-menu-nav {
-  margin-top: 136px;
-  margin-left: 50px;
-  margin-right: auto;
-  margin-bottom: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .mobile-menu-nav {
-    margin-top: 156px;
-    margin-left: 85px;
-    margin-right: auto;
-    margin-bottom: auto;
-  }
-}
 
 .mobile-nav-list {
   display: flex;
