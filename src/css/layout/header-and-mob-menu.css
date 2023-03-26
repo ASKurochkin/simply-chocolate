@@ -28,6 +28,7 @@
   font-style: italic;
   font-weight: 700;
   letter-spacing: -0.03em;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
@@ -38,7 +39,6 @@
 
 @media screen and (min-width: 1200px) {
   .logo {
-    font-style: normal;
     font-size: 18px;
     line-height: 1.11;
 
@@ -97,7 +97,7 @@
   justify-content: center;
   width: 28px;
   height: 28px;
-  stroke: #111111;
+  stroke: var(--primary-clr);
 }
 
 @media screen and (min-width: 768px) {
@@ -170,7 +170,7 @@
   .socials-icon {
     width: 24px;
     height: 24px;
-    stroke: #111111;
+    stroke: var(--primary-clr);
     fill: transparent;
 
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -187,6 +187,10 @@
   height: 100%;
   background-color: var(--bgd-clr);
   z-index: 1;
+  padding-top: 136px;
+  padding-right: 46px;
+  padding-left: 50px;
+  padding-bottom: 136px;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -204,7 +208,11 @@
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
-    width: 188px;
+    width: 290px;
+    padding-top: 156px;
+    padding-right: 81px;
+    padding-left: 85px;
+    padding-bottom: 156px;
   }
 }
 
@@ -232,7 +240,7 @@
 @media screen and (min-width: 768px) {
   .mobile-close {
     top: 24px;
-    left: 78px;
+    right: 32px;
 
     width: 32px;
     height: 32px;
@@ -248,7 +256,7 @@
 .mobile-close-icon {
   width: 16px;
   height: 16px;
-  stroke: #ffffff;
+  stroke: var(--secondary-clr);
 
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
     scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -262,22 +270,6 @@
 }
 
 /* mobile-menu-nav */
-
-.mobile-menu-nav {
-  margin-top: 136px;
-  margin-left: 50px;
-  margin-right: auto;
-  margin-bottom: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .mobile-menu-nav {
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-  }
-}
 
 .mobile-nav-list {
   display: flex;
@@ -327,7 +319,7 @@
 @media screen and (min-width: 768px) {
   .mobile-menu-socials {
     bottom: 24px;
-    left: 61px;
+    left: 32px;
   }
 }
 
@@ -350,7 +342,7 @@
 .mobile-socials-icon {
   width: 22px;
   height: 22px;
-  stroke: #ffffff;
+  stroke: var(--secondary-clr);
   fill: transparent;
 
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
