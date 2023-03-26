@@ -80,6 +80,7 @@
 .advantage-img {
   width: 32px;
   height: 32px;
+  fill: var(--brand-clr);
 }
 
 .advantage-subtitle {
