@@ -163,3 +163,7 @@
         padding: 16px 42px;
     }
 }
+
+.backdrop.is-hidden .modal-explore {
+    transform: scale(0);
+  }
