@@ -1,0 +1,135 @@
+.container-componets {
+    padding: 72px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .container-componets {
+        padding: 100px 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container-componets {
+        padding: 128px 0;
+    }
+}
+
+.container {
+}
+.section-title {
+    max-width: 283px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .section-title {
+        max-width: 411px;
+        margin-bottom: 24px;
+    }
+}
+
+
+
+.section-description {
+    max-width: 283px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .section-description {
+        max-width: 411px;
+        margin-bottom: 50px;
+    }
+}
+
+.component-list {
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 32px;
+   
+} 
+
+@media screen and (min-width: 768px) {
+    .component-list {
+        flex-direction: column;
+        justify-content: space-between;
+        max-height: 572px;
+    }
+}
+
+
+
+
+.component-item { 
+    padding: 25px 0 0 28px;
+    width: 335px;
+    height: 270px; 
+    border-radius: 15px;
+
+} 
+
+#first-component{
+    background-color: var(--brand-clr);
+} 
+
+#second-component,
+#fourth-component{
+    background-color: var(--secondary-clr);
+    border: 1px solid var(--brand-clr);
+} 
+
+#third-component {
+    background-color: var(--bgd-clr);
+}
+
+.component-picture{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    display: block;
+    width: 224px;
+    height: 171px;
+    background-size: contain;
+
+}
+
+
+.component-image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    width: 224px;
+    height: 171px;
+    background-size: contain;
+}
+.component-name {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#first-component-text{
+color: var(--secondary-clr);
+}
+
+#second-component-text{
+    color: var(--primary-clr);
+}
+
+.component-overlay {
+    position: absolute;
+   
+}
+.overlay-title {
+}
+.overlay-component-button {
+}
+.overlay-bebefits-button {
+}
+.overlay-description {
+}
