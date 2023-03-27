@@ -56,7 +56,7 @@
     line-height: 1.17;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .subscribe-txt {
   width: 326px;
   height: 108px;
