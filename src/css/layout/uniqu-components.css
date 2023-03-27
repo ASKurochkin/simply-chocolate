@@ -47,16 +47,16 @@
 }
 
 .component-list {
-   
-    display: flex;
+     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px 32px;
+    gap: 20px;
    
 } 
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .component-list {
+        gap: 32px;
      flex-direction: row;
     }
     
@@ -74,9 +74,9 @@
   }
   
 
-@media screen and (min-width: 1200x) {
+@media screen and (min-width: 1200px) {
         .component-list {
-        gap: 0px;
+        gap: 19px;
         }
         .component-list li:nth-child(2) {
             order: 2;
@@ -88,11 +88,7 @@
             order: 4;
           }  
       
-
 }
-
-
-
 
 
 .component-item { 
@@ -102,6 +98,20 @@
     border-radius: 15px;
 
 } 
+
+@media screen and (min-width: 768px) {
+    .component-item { 
+        width: 336px;
+           
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .component-item { 
+        width: 270px;
+           
+    }
+}
 
 #first-component{
     background-color: var(--brand-clr);
@@ -117,18 +127,6 @@
     background-color: var(--bgd-clr);
 }
 
-.component-picture{
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 25px;
-    display: block;
-    width: 224px;
-    height: 171px;
-    background-size: contain;
-
-}
-
-
 .component-image {
     display: block;
     margin-right: auto;
@@ -138,6 +136,29 @@
     height: 171px;
     background-size: contain;
 }
+/* .component-picture{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    display: block;
+    width: 224px;
+    height: 171px;
+    background-size: contain;
+
+} */
+
+@media screen and (min-width: 1200px) {
+    .component-image {
+        margin-left: 0;
+        
+        margin-bottom: 25px;
+        width: 206px;
+        height: 160px;
+        background-size: contain;
+    }
+}
+
+
 .component-name {
     font-weight: 600;
     text-transform: uppercase;
