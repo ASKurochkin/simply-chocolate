@@ -27,9 +27,14 @@
     }
 }
 
+.backdrop.is-hidden .modal-thank-you {
+    transform: scale(0);
+}
+
 .modal-thankyou-wrap{
     width: 219px;
 }
+
 @media screen and (min-width: 768px){
 .modal-thankyou-wrap {
     width: 309px;
@@ -46,6 +51,7 @@
 
     color: var(--btn-secondary-clr);
 }
+
 @media screen and (min-width: 768px){
 .modal-thankyou-title{
     font-size: 24px;
@@ -59,6 +65,7 @@
          
     color: var(--secondary-clr);
 }
+
 @media screen and (min-width: 768px){
 .modal-thankyou-text{
     font-size: 18px;
@@ -73,6 +80,7 @@
     left: -70px;
     top: 155px;
 }
+
 @media screen and (min-width: 768px){
 .modal-thankyou-images {
     width: 384px;
@@ -96,8 +104,10 @@
     background-color: var(--btn-secondary-clr);
     border-radius: 25px;
     border: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
 @media screen and (min-width: 768px){
 .btm-modal-thankyou {
     top: 24px;
@@ -108,14 +118,21 @@
 }
 }
 
+.btm-modal-thankyou:hover, 
+.btm-modal-thankyou:focus {
+    transform: scale(1.2);
+}
+
 .modal-thankyou-icon{
     width: 16px;
     height: 16px;
     stroke: url(#gradient);
 }
+
 @media screen and (min-width: 768px){
 .modal-thankyou-icon {
     width: 22px;
     height: 22px;
 }
 }
+
