@@ -102,7 +102,7 @@
         >
         <div class="form-input-name-wrap">
           <input
-            class="form-input-name"
+            class="form-buy-input"
             id="username"
             type="text"
             name="username"
@@ -111,7 +111,7 @@
             pattern="[a-zA-Z]{2,15}"
           />
           <input
-            class="form-input-name"
+            class="form-buy-input"
             type="text"
             name="usersurname"
             placeholder="Surname"
@@ -121,7 +121,7 @@
         </div>
         <label for="useremail" class="form-buy-label">Email </label>
         <input
-          class="form-input-name"
+          class="form-buy-input imput-useremail"
           id="useremail"
           type="email"
           name="useremail"
@@ -129,8 +129,9 @@
           required
         />
         <label for="userphone" class="form-buy-label">Phone number</label>
-        <div>
+        <div class="form-buy-phone">
           <input
+            class="form-buy-input-phone form-buy-input"
             id="userphone"
             type="tel"
             name="userphone"
@@ -139,14 +140,17 @@
             pattern="[0-9]{2}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
             title="xx-xxx-xx-xx"
           />
-          <svg width="32" height="24">
-            <use href="../images/icon.svg#icon-flag"></use>
-          </svg>
-          <p>+380</p>
+          <div class="form-buy-icon-wrap">
+            <svg class="form-buy-icon-phone">
+              <use href="../images/icon.svg#icon-flag"></use>
+            </svg>
+            <p>+380</p>
+          </div>
         </div>
         <label for="usercard" class="form-buy-label">Card number</label>
-        <div>
+        <div class="form-buy-card">
           <input
+            class="form-buy-input"
             id="usercard"
             type="text"
             name="usercard"
@@ -155,7 +159,7 @@
             pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
             title="xxxx-xxxx-xxxx-xxxx"
           />
-          <svg width="30" height="18">
+          <svg class="form-buy-icon-card">
             <use href="../images/icon.svg#icon-card"></use>
           </svg>
         </div>

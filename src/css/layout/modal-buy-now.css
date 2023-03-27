@@ -156,6 +156,10 @@
 }
 }
 
+.imput-useremail{
+margin-bottom: 18px;
+}
+
 .form-input-name-wrap{
     display: flex;
     flex-direction: column;
@@ -174,7 +178,10 @@
 }
 }
 
-.form-input-name{
+
+
+
+.form-buy-input{
     width: 100%;
     height: 45px;
 
@@ -184,11 +191,53 @@
     background-color: var(--bgd-body-clr);
 
     padding-left: 18px;
-    
+
 }
 
-.form-input-name::placeholder{
+
+.form-buy-input::placeholder{
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
+}
+
+.form-buy-phone{
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.form-buy-input-phone{
+padding-left: 106px;
+}
+
+.form-buy-icon-wrap{
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translate(0, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-right: 8px;
+
+    box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-buy-icon-phone{
+    width: 24px;
+    height: 18px;
+}
+
+.form-buy-card{
+    position: relative;
+}
+
+.form-buy-icon-card{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 22px;
+    transform: translate(-50, 0);
+    height: 13px;
 }
