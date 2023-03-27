@@ -16,7 +16,6 @@
 
   background-color: var(--primary-background-color);
   background-size: cover;
-  position: relative;
   margin: 0 auto;
   height: 621px;
   border-radius: 30px;
@@ -119,12 +118,19 @@
 @media screen and (min-width: 768px) {
   .hero-buttons-wrapper {
     display: flex;
-    flex-direction: row;
     align-items: baseline;
-    justify-content: center;
-    max-height: 45px;
+    gap: 159px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .hero-buttons-wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 590px;
+  }
+}
+
 
 .hero-btn-box {
   display: flex;
@@ -136,19 +142,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-btn-box {
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero-scroll-box {
-    margin-left: 159px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-scroll-box {
-    margin-left: 590px;
+    margin-bottom: 0;
   }
 }
 
