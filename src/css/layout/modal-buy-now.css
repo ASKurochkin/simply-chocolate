@@ -1,0 +1,194 @@
+:root {
+    --brand-clr: #FD9222;
+    --primary-clr: #111111;
+    --secondary-clr: #FFFFFF;
+    --btn-secondary-clr: #FCF1E0;
+    --bgd-clr: #1E1823;
+    --bgd-body-clr: #FAFAFA;
+    --backdrop-clr: rgba(30, 24, 35, 0.35);
+}
+
+.modal-buy-now {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+
+    max-width: 311px;
+    width: 95%;
+
+    background-color: var(--bgd-body-clr);
+    border-radius: 15px;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    /* 
+    
+    padding-right: 24px;
+    padding-left: 24px; */
+
+    overflow: hidden;
+
+}
+
+@media screen and (min-width: 768px) {
+.modal-buy-now {
+    max-width: 609px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    }
+}
+
+.modal-buy-title{
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.modal-buy-close{
+    position: absolute;
+        top: 14px;
+        right: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+    
+        border: none;
+        background-color: transparent;
+        padding: 0;
+
+}
+
+@media screen and (min-width: 768px){
+.modal-buy-close{
+    width: 28px;
+    height: 28px;
+}
+}
+
+.modal-close-icon{
+    width: 24px;
+    height: 24px;
+    stroke: var(--primary-clr);
+}
+
+@media screen and (min-width: 768px) {
+    .modal-close-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.modal-close-icon:hover, .modal-close-icon:focus{
+    stroke: var(--brand-clr);
+}
+
+.modal-buy-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px){
+.modal-buy-list{
+    margin-bottom: 40px;
+}
+}
+
+.modal-buy-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-bottom: 28px;
+    padding-left: 32px;
+   
+
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    background-color: var(--secondary-clr);
+}
+
+@media screen and (min-width: 768px){
+.modal-buy-item{
+    
+}
+}
+
+.modal-buy-text{
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    background: var(--bgd-body-clr);
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 8px 29px;
+}
+
+.modal-form-buy{
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.modal-form-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-buy-label{
+    margin-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+@media screen and (min-width: 768px){
+.form-buy-label{
+    font-size: 14px;
+    line-height: 1.29;       
+}
+}
+
+.form-input-name-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 263px;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+@media screen and (min-width: 768px){
+.form-input-name-wrap {
+    flex-direction: row;
+    gap: 21px;
+    max-width: 513px;
+    
+}
+}
+
+.form-input-name{
+    width: 100%;
+    height: 45px;
+
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 8px;
+    background-color: var(--bgd-body-clr);
+
+    padding-left: 18px;
+    
+}
+
+.form-input-name::placeholder{
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+}
