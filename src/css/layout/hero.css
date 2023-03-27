@@ -3,6 +3,10 @@
 }
 
 .hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
   background-image: linear-gradient(
       180deg,
       rgba(17, 17, 17, 0) 0%,
@@ -14,8 +18,8 @@
   background-size: cover;
   position: relative;
   margin: 0 auto;
+  height: 621px;
   border-radius: 30px;
-  padding-top: 395px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
@@ -42,7 +46,7 @@
         rgba(17, 17, 17, 0.4) 100%
       ),
       url(/images/hero/hero-bg-tablet-1x.jpg);
-    padding-top: 671px;
+    height: 890px;
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
@@ -70,7 +74,7 @@
         rgba(17, 17, 17, 0.4) 100%
       ),
       url(/images/hero/hero-bg-desktop-1x.jpg);
-    padding-top: 381px;
+    height: 600px;
   }
 }
 
@@ -95,7 +99,13 @@
   letter-spacing: -0.03em;
   color: var(--secondary-clr);
   margin-bottom: 32px;
-  min-width: 299px;
+  max-width: 280px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-subtitle > br {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -121,17 +131,25 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 32px;
+  gap: 14px;
 }
 
 @media screen and (min-width: 768px) {
   .hero-btn-box {
     margin-right: auto;
-    gap: 14px;
   }
 }
 
-.hero-main-btn {
-  cursor: pointer;
+@media screen and (min-width: 768px) {
+  .hero-scroll-box {
+    margin-left: 159px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-scroll-box {
+    margin-left: 590px;
+  }
 }
 
 .hero-scroll-btn {
@@ -190,12 +208,4 @@
 .hero-scroll-btn:hover,
 .hero-scroll-btn:focus {
   color: var(--brand-clr);
-}
-
-.hero-main-btn,
-.hero-scndry-btn {
-  max-width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
