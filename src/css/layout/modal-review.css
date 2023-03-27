@@ -1,12 +1,3 @@
-:root {
-    --brand-clr: #FD9222;
-    --primary-clr: #111111;
-    --secondary-clr: #FFFFFF;
-    --btn-secondary-clr: #FCF1E0;
-    --bgd-clr: #1E1823;
-    --bgd-body-clr: #FAFAFA;
-    --backdrop-clr: rgba(30, 24, 35, 0.35);
-}
 .modal-review{
     position: absolute;
     bottom: 50%;
