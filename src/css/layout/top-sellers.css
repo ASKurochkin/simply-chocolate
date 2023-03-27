@@ -58,7 +58,7 @@
 }
 @media screen and (min-width: 1200px) {
   .third-image {
-    display: inline-block;
+    display: block;
   }
 }
 
