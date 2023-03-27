@@ -72,7 +72,6 @@
 
 /* menu-hamburger */
 .menu-hamburger {
-  cursor: pointer;
   background-color: transparent;
   padding-top: 20px;
   padding-bottom: 14px;
@@ -228,7 +227,6 @@
   align-items: center;
   justify-content: center;
 
-  cursor: pointer;
   background-color: transparent;
   padding-top: 0;
   padding-bottom: 0;

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -5,4 +9,8 @@ body {
     letter-spacing: -0.02em;
     color: var(--primary-clr);
     background-color: var(--bgd-body-clr);
+  }
+
+  button {
+    cursor: pointer;
   }
