@@ -24,6 +24,10 @@
     }
 }
 
+.backdrop.is-hidden .modal-review {
+    transform: scale(0);
+}
+
 .modal-review-title{
     max-width: 255px;
     margin-bottom: 32px;
@@ -127,7 +131,7 @@
 
 @media screen and (min-width: 768px){
 .form-review-input{
-    width: 437px;
+    width: 100%;
     height: 66px;
     padding-left: 24px;
 
