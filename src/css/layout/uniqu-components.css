@@ -43,7 +43,7 @@
 }
 
 .component-list {
-     display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
@@ -52,8 +52,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .component-list {
-        gap: 32px;
-     flex-direction: row;
+    gap: 32px;
+    flex-direction: row;
     }
     
     .component-list li:nth-child(2) {
@@ -66,34 +66,32 @@
     
     .component-list li:nth-child(4) {
       order: 2;
-    }  
-  }
-  
-@media screen and (min-width: 1200px) {
-        .component-list {
-        gap: 19px;
-        }
-        .component-list li:nth-child(2) {
-            order: 2;
-          } 
-        .component-list li:nth-child(3) {
-            order: 3;
-          }
-          .component-list li:nth-child(4) {
-            order: 4;
-          }  
-      
+    }
 }
 
+    @media screen and (min-width: 1200px) {
+        .component-list {
+            gap: 19px;
+        }
+    
+        .component-list li:nth-child(2) {
+            order: 2;
+        }
+    
+        .component-list li:nth-child(3) {
+            order: 3;
+        }
+    
+        .component-list li:nth-child(4) {
+            order: 4;
+        }
+    
+    }
+
 .component-item { 
-    position: relative;
-    overflow: hidden;
-    padding: 28px;
     width: 335px;
     height: 270px; 
-    border-radius: 15px;
-
-} 
+    } 
 
 @media screen and (min-width: 768px) {
     .component-item { 
@@ -109,17 +107,27 @@
     }
 }
 
-#first-component{
+.flip-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.component-item:nth-child(1) .flip-container {
     background-color: var(--brand-clr);
 } 
 
-#second-component,
-#fourth-component{
+.component-item:nth-child(2n) .flip-container{
     background-color: var(--secondary-clr);
     border: 1px solid var(--brand-clr);
 } 
 
-#third-component {
+.component-item:nth-child(3) .flip-container{
     background-color: var(--bgd-clr);
 }
 
@@ -137,7 +145,6 @@
 @media screen and (min-width: 1200px) {
     .component-image {
         margin-left: 0;
-        
         margin-bottom: 36px;
         width: 206px;
         height: 160px;
@@ -151,26 +158,41 @@
     text-transform: uppercase;
 }
 
-#first-component-text{
+.component-item:nth-child(2n+1) .component-name{
 color: var(--secondary-clr);
 }
 
-#second-component-text{
+.component-item:nth-child(2n) .component-name{
     color: var(--primary-clr);
 }
 
+.component-item:hover .flip-container,
+.component-item:focus .flip-container {
+        transform: rotateY(180deg);
+}
+
+
+.front-container{
+    padding: 28px 0 0 28px;
+}
+
+.front-container,
 .component-overlay {
     position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
+    border-radius: 15px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.component-overlay {
     padding: 28px;
+    overflow: hidden;
+   
+    transform: rotateY(180deg);
     
-
-    transform: translate(0, 100%);
-    transition: transform 250ms linear;
-
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -182,19 +204,13 @@ color: var(--secondary-clr);
    
 }
 
-
-
-.component-item:hover .component-overlay,
-.component-item:focus .component-overlay {
-    transform: translate(0, 0);
-}
 .overlay-title {
-margin-bottom: 8px;
-font-weight: 600;
-font-size: 18px;
-line-height: 1.22;
-letter-spacing: -0.03em;
-text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
 }
 
 .overlay-component-button {
@@ -227,7 +243,10 @@ text-transform: uppercase;
 .overlay-bebefits-button:focus {
     color: var(--secondary-clr);
     background-color: var(--brand-clr);
-
+    transform: scale(1.1);
+    transition-property:  transform;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -238,8 +257,7 @@ text-transform: uppercase;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     overflow: hidden;
-    margin-bottom: 70px;
-    
+        
   }
   
   .component-overlay .overlay-component-button:hover ~ .overlay-description,
@@ -253,14 +271,10 @@ text-transform: uppercase;
   .component-overlay .overlay-component-button:hover ~ .overlay-description::-webkit-scrollbar,
   .component-overlay .overlay-component-button:focus ~ .overlay-description::-webkit-scrollbar {
     width: 4px;
-    height: 50px; 
-    border-radius: 4px;
+    border-radius: 35px;
+    background-color:var(--brand-clr);
     
   }
-  .component-overlay .overlay-component-button:hover ~ .overlay-description::-webkit-scrollbar-thumb,
-  .component-overlay .overlay-component-button:focus ~ .overlay-description::-webkit-scrollbar {
-    background-color: var(--brand-clr);
-    
-  }
+ 
   
   
