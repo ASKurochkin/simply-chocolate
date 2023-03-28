@@ -1,0 +1,142 @@
+.modal-feedback {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+
+  max-width: 311px;
+  width: 95%;
+
+  background-color: var(--brand-clr);
+  border-radius: 15px;
+
+  padding-top: 84px;
+  padding-left: 58px;
+  padding-bottom: 178px;
+
+  overflow: hidden;
+
+  transition: transform 250ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-feedback {
+    width: 516px;
+    padding-top: 163px;
+    padding-left: 170px;
+    padding-bottom: 163px;
+  }
+}
+
+.backdrop.is-hidden .modal-feedback {
+  transform: scale(0);
+}
+
+.modal-feedback-wrap {
+  max-width: 229px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-feedback-wrap {
+    max-width: 297px;
+  }
+}
+
+.modal-feedback-title {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--btn-secondary-clr);
+
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-feedback-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.modal-feedback-text {
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+
+  color: var(--secondary-clr);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-feedback-text {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feedback-text-br {
+    display: none;
+  }
+}
+
+.modal-feedback-close {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--btn-secondary-clr);
+  border-radius: 25px;
+  border: none;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-feedback-close {
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.modal-feedback-icon {
+  width: 16px;
+  height: 16px;
+  stroke: url(#gradient);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-feedback-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.modal-feedback-close:hover,
+.modal-feedback-close:focus {
+  transform: scale(1.2);
+}
+
+.modal-feedback-images {
+  position: absolute;
+  transform: rotate(-17deg);
+  left: -70px;
+  top: 155px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-feedback-images {
+    width: 384px;
+    height: 516px;
+    transform: rotate(-5deg);
+    left: -120px;
+    top: 120px;
+  }
+}
