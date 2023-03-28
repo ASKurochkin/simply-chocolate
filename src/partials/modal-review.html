@@ -1,46 +1,61 @@
-<!-- <div class="backdrop"> -->
-<div class="modal-review">
-  <h2 class="section-title">
-    leave a review about<span class="title-brand">our chocolate</span>
-  </h2>
-  <button type="button">
-    <svg>
-      <use href="../images/icon.svg#icon-close"></use>
-    </svg>
-  </button>
-
-  <form>
-    <input
-      type="text"
-      name="username"
-      placeholder="Name"
-      pattern="[a-zA-Z]{2,15}"
-    />
-
-    <input
-      type="email"
-      name="useremail"
-      placeholder="Enter your email"
-      required
-    />
-
-    <div>
-      <input
-        type="tel"
-        name="userphone"
-        placeholder="Phone number"
-        required
-        pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-        title="xx-xxx-xx-xx"
-      />
-      <svg width="24" height="18">
-        <use href="../images/icon.svg#icon-flag"></use>
+<div class="backdrop" data-modal-rev>
+  <div class="modal-review">
+    <h2 class="section-title modal-review-title">
+      leave a review<br class="title-br" />
+      about<span class="title-brand"> our chocolate</span>
+    </h2>
+    <button type="button" class="btn-modal-review">
+      <svg data-modal-rev-close class="modal-review-icon">
+        <use href="./images/icon.svg#icon-close"></use>
       </svg>
-      <p>+380</p>
-    </div>
+    </button>
 
-    <textarea name="comment" placeholder="Enter text"></textarea>
-    <button type="submit" class="btn-primary">Send</button>
-  </form>
+    <form class="form-review">
+      <div class="form-review-wrap">
+        <input
+          class="form-review-input"
+          type="text"
+          name="username"
+          placeholder="Name"
+          pattern="[a-zA-Z]{2,15}"
+        />
+
+        <input
+          class="form-review-input"
+          type="email"
+          name="useremail"
+          placeholder="Enter your email"
+          required
+        />
+
+        <div class="form-phone-wrap">
+          <input
+            class="form-review-input input-phone"
+            type="tel"
+            name="userphone"
+            placeholder="Phone number"
+            required
+            pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            minlength="12"
+            maxlength="12"
+            title="xx-xxx-xx-xx"
+          />
+          <div class="form-icon-wrap">
+            <svg class="form-revier-icon">
+              <use href="./images/icon.svg#icon-flag"></use>
+            </svg>
+            <p class="form-phone-text">+380</p>
+          </div>
+        </div>
+
+        <textarea
+          class="form-textarea"
+          name="comment"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Send</button>
+    </form>
+  </div>
 </div>
-<!-- </div> -->
