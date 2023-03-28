@@ -1,0 +1,169 @@
+.modal-explore{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+
+    max-width: 311px;
+    
+    background-color: var(--bgd-body-clr);
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 768px){
+.modal-explore{
+    max-width: 538px;
+    }
+}
+
+.modal-explore-images{
+    position: relative;
+    margin-bottom: 32px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px
+}
+
+@media screen and (min-width: 768px){
+.modal-explore-images{
+    width: 538px;
+    height: 196px;
+    margin-bottom: 40px;
+    }
+}
+
+.btn-close-explore{
+    position: absolute;
+    top: 15px;
+    right: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    
+}
+
+@media screen and (min-width: 768px){
+.btn-close-explore{
+    width: 28px;
+    height: 28px;
+    }
+}
+
+.close-explore-icon{
+    stroke: var(--secondary-clr);
+      
+    width: 24px;
+    height: 24px;
+        
+}
+
+@media screen and (min-width: 768px){
+.close-explore-icon{
+    width: 14px;
+    height: 14px;
+    }
+}
+
+.container-modal-explore{
+    display: flex;
+    flex-direction: column;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    gap: 24px;
+}
+
+@media screen and (min-width: 768px){
+.container-modal-explore{
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    gap: 28px;
+}
+}
+
+.form-explore-wrap{
+    position: relative;
+    display: flex;
+}
+
+@media screen and (min-width: 768px){
+.form-explore-wrap{
+    position: static;
+    gap: 8px;
+    }
+}
+
+.modal-explore-input{
+    padding-left: 18px;
+    padding-right: 97px;
+    width: 263px;
+    height: 45px;
+
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 25px;
+    outline: none;
+}
+
+@media screen and (min-width: 768px){
+    .modal-explore-input{
+        padding-left: 24px;
+        width: 313px;
+        height: 52px;
+        filter: none;
+        border-radius: 30px;
+     }
+}
+
+.modal-explore-input::placeholder{
+    line-height: 1.2;
+    color: rgba(64, 64, 64, 0.3);
+}
+
+@media screen and (min-width: 768px){
+.modal-explore-input::placeholder{
+    font-size: 18px;
+}
+}
+
+.btn-form-explore{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 14px 22px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    
+    background-color: var(--brand-clr);
+    border-radius: 100px;
+    border: none;
+
+    color: var(--secondary-clr);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-form-explore:hover, .btn-form-explore:focus{
+    background-color: var(--btn-secondary-clr);
+    color: var(--brand-clr);
+}
+
+@media screen and (min-width: 768px){
+    .btn-form-explore{
+        position: static;
+        padding: 16px 42px;
+    }
+}
+
+.backdrop.is-hidden .modal-explore {
+    transform: scale(0);
+  }

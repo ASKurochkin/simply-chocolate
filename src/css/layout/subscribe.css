@@ -1,0 +1,64 @@
+.subscribe {
+    color: var(--secondary-clr);
+    padding-top: 63px;
+    padding-bottom: 63px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image:
+        url(/images/subscribe/subscribe-chocolate-desktop.jpg)
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .subscribe {
+        background-image:
+            url(/images/subscribe/subscribe-chocolate-desktop@2.jpg);
+    }
+}
+
+@media (min-width: 768px) {
+    .subscribe {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+}
+
+.subscribe-title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 378px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .subscribe-title {
+        max-width: 467px;
+
+        font-size: 24px;
+        line-height: 1.17   ;
+    }
+}
+
+.subscribe-txt {
+    width: 467px;
+    height: 72px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.17;
+}
+
+@media screen and (max-width: 767px) {
+    .subscribe-txt {
+  width: 326px;
+  height: 108px;
+    }
+}
