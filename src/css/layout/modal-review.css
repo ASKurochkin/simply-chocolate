@@ -139,6 +139,9 @@
     height: 66px;
     padding-left: 24px;
 
+    font-size: 18px;
+    font-weight: 500;
+
     border-radius: 13px;
 }
 }
@@ -245,6 +248,8 @@
 .form-textarea{
     height: 137px;
     padding: 22px 24px;
+
+    font-size: 18px;
 
     border-radius: 13px;
 }
