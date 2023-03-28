@@ -14,6 +14,12 @@
 @import url('./components/backdrop.css');
 @import url('./components/titles.css');
 @import url('./components/buttons.css');
+/* slik */
+@import url('./components/slik.css');
+
+/* up-button */
+@import url('./components/up-button.css');
+
 
 /* Layout */
 @import url('./layout/header-and-mob-menu.css');
@@ -31,3 +37,4 @@
 @import url('./layout/modal-review.css');
 @import url('./layout/modal-feedback.css');
 @import url('./layout/modal-explore.css');
+
