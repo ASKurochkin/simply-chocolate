@@ -1,0 +1,141 @@
+.modal-thank-you{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+
+    max-width: 311px;
+
+    background-color: var(--brand-clr);
+    border-radius: 15px;
+
+    padding-top: 84px;
+    padding-right: 24px;
+    padding-bottom: 170px;
+    padding-left: 68px;
+
+    overflow: hidden;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+@media screen and (min-width: 768px){
+.modal-thank-you {
+    max-width: 516px;
+    padding-top: 154px;
+    padding-right: 44px;
+    padding-bottom: 154px;
+    padding-left: 163px;
+    }
+}
+
+.backdrop.is-hidden .modal-thank-you {
+    transform: scale(0);
+}
+
+.modal-thankyou-wrap{
+    width: 219px;
+}
+
+@media screen and (min-width: 768px){
+.modal-thankyou-wrap {
+    width: 309px;
+        }
+}
+
+.modal-thankyou-title{
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+
+    color: var(--btn-secondary-clr);
+}
+
+@media screen and (min-width: 768px){
+.modal-thankyou-title{
+    font-size: 24px;
+    line-height: 1.17;
+    
+}
+}
+
+.modal-thankyou-text{
+    line-height: 1.14;
+         
+    color: var(--secondary-clr);
+}
+
+@media screen and (min-width: 768px){
+.modal-thankyou-text{
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+}
+}
+
+.modal-thankyou-images{
+    position: absolute;
+    transform: rotate(-17deg);
+    left: -70px;
+    top: 155px;
+}
+
+@media screen and (min-width: 768px){
+.modal-thankyou-images {
+    width: 384px;
+    height: 516px;
+    transform: rotate(-5deg);
+    left: -120px;
+    top: 120px;
+    }
+}
+
+.btm-modal-thankyou{
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--btn-secondary-clr);
+    border-radius: 25px;
+    border: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+@media screen and (min-width: 768px){
+.btm-modal-thankyou {
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+            
+}
+}
+
+.btm-modal-thankyou:hover, 
+.btm-modal-thankyou:focus {
+    transform: scale(1.2);
+}
+
+.modal-thankyou-icon{
+    width: 16px;
+    height: 16px;
+    stroke: url(#gradient);
+}
+
+@media screen and (min-width: 768px){
+.modal-thankyou-icon {
+    width: 22px;
+    height: 22px;
+}
+}
+
