@@ -230,6 +230,7 @@ text-transform: uppercase;
 
 }
 
+
   .component-overlay .overlay-description {
     max-width: 100%;
     display: -webkit-box;
@@ -237,6 +238,8 @@ text-transform: uppercase;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     overflow: hidden;
+    margin-bottom: 70px;
+    
   }
   
   .component-overlay .overlay-component-button:hover ~ .overlay-description,
