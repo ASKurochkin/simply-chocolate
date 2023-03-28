@@ -32,7 +32,7 @@
 
     <!-- Styles -->
     
-    <script type="module" crossorigin src="/simply-chocolate/assets/index-a40d7fea.js"></script>
+    <script type="module" crossorigin src="/simply-chocolate/assets/index-6518001d.js"></script>
     <link rel="stylesheet" href="/simply-chocolate/assets/index-a2b24eed.css">
   </head>
 
@@ -174,7 +174,7 @@
 
       <div class="hero-buttons-wrapper">
         <div class="hero-btn-box">
-          <button type="button" class="btn-primary hero-button">Buy now</button>
+          <button type="button" class="btn-primary hero-button" data-modal-bn-open>Buy now</button>
           <a class="btn-second hero-button" href="#how-its-made"
             >How it's made</a
           >
@@ -641,7 +641,7 @@
         </picture>
         <div class="top-sellers-info">
           <div class="top-sellers-box">
-            <button type="button" class="btn-primary top-sellers-button">
+            <button type="button" class="btn-primary top-sellers-button" data-modal-bn-open>
               Buy now
             </button>
           </div>
@@ -778,7 +778,7 @@
         </div>
       </li>
     </ul>
-    <button class="btn-third reviews-btn" type="button">Leave a review</button>
+    <button class="btn-third reviews-btn" type="button" data-modal-rev-open>Leave a review</button>
   </div>
 </section>
 
@@ -876,12 +876,12 @@
 
 
     <!-- Modal window Buy-now -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal-bn>
   <div class="modal-buy-now">
     <h2 class="section-title modal-buy-title">
       <span class="title-brand">buy</span>now
     </h2>
-    <button type="button" class="modal-buy-close">
+    <button type="button" class="modal-buy-close" data-modal-bn-close>
       <svg class="modal-close-icon">
         <use href="/simply-chocolate/assets/icon-9abc3b27.svg#icon-close"></use>
       </svg>
@@ -1039,14 +1039,14 @@
           placeholder="Enter text"
         ></textarea>
       </div>
-      <button type="submit" class="btn-primary">Submit</button>
+      <button type="submit" class="btn-primary" data-modal-ty-open>Submit</button>
     </form>
   </div>
 </div>
 
 
     <!-- Modal window Thank-you-for-buy -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal-ty>
   <div class="modal-thank-you">
     <div class="modal-thankyou-wrap">
       <h2 class="modal-thankyou-title">thank you!</h2>
@@ -1055,7 +1055,7 @@
         discount on all our products.
       </p>
     </div>
-    <button type="button" class="btm-modal-thankyou">
+    <button type="button" class="btm-modal-thankyou" data-modal-ty-close>
       <svg class="modal-thankyou-icon">
         <use href="/simply-chocolate/assets/icon-9abc3b27.svg#icon-x"></use>
         <defs>
@@ -1092,13 +1092,13 @@
 
 
     <!-- Modal window Rewiew -->
-    <div class="backdrop" data-modal-rev>
+    <div class="backdrop is-hidden" data-modal-rev>
   <div class="modal-review">
     <h2 class="section-title modal-review-title">
       leave a review<br class="title-br" />
       about<span class="title-brand"> our chocolate</span>
     </h2>
-    <button type="button" class="btn-modal-review">
+    <button type="button" class="btn-modal-review" data-modal-rev-close>
       <svg data-modal-rev-close class="modal-review-icon">
         <use href="/simply-chocolate/assets/icon-9abc3b27.svg#icon-close"></use>
       </svg>
@@ -1149,14 +1149,14 @@
         ></textarea>
       </div>
 
-      <button type="submit" class="btn-primary">Send</button>
+      <button type="submit" class="btn-primary" data-modal-fb-open>Send</button>
     </form>
   </div>
 </div>
 
 
     <!-- Modal window Thank-you-for-feedback -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal-fb>
   <div class="modal-feedback">
     <div class="modal-feedback-wrap">
       <h2 class="modal-feedback-title">
@@ -1168,7 +1168,7 @@
         from you!
       </p>
     </div>
-    <button type="button" class="modal-feedback-close">
+    <button type="button" class="modal-feedback-close" data-modal-fb-close>
       <svg class="modal-feedback-icon">
         <use href="/simply-chocolate/assets/icon-9abc3b27.svg#icon-close"></use>
         <defs>
@@ -1246,7 +1246,7 @@
             placeholder="Enter your email"
             required
           />
-          <button class="btn-form-explore" type="submit">Submit</button></span
+          <button class="btn-form-explore" type="submit" data-modal-close>Submit</button></span
         >
       </form>
     </div>
