@@ -21,7 +21,6 @@
 
 .made-container {
   width: 100%;
-  max-width: 335px;
   height: 500px;
   margin: 0 auto;
 
@@ -32,11 +31,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
 }
 
-.made-video-js {
-  z-index: 1;
+@media screen and (max-width: 767px) {
+  .made-container {
+    max-width: 335px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -53,10 +54,20 @@
   }
 }
 .video {
-  background: red url('icon-playp.svg') no-repeat center;
+  background: url('../../images/play-video.svg') no-repeat center;
   width: 100%;
-  padding-top: 100%; /*height меняем на padding-top для тягучести*/
+  padding-top: 150%; /*height меняем на padding-top для тягучести*/
+  border-radius: 15px;
+  background-size: 10%;
+
+  transition: background-size 250ms linear;
 }
+
+.video:hover {
+  cursor: pointer;
+  background-size: 13%;
+}
+
 .video iframe {
   position: absolute;
   top: 0;
@@ -70,7 +81,7 @@
 
 @media screen and (min-width: 768px) {
   .video {
-    padding-top: 56.25%;
+    padding-top: 400px;
   }
 }
 
