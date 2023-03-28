@@ -77,10 +77,10 @@
 }
 
 .modal-buy-list{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 32px;
+    align-items: center; */
+    margin-bottom: 59px;
 }
 
 @media screen and (min-width: 768px){
@@ -91,10 +91,11 @@
 }
 
 .modal-buy-item{
-    display: flex;
+    margin-right: 16px;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 16px; */
 
     padding-top: 32px;
     padding-right: 32px;
@@ -375,4 +376,28 @@
 
 .form-buy-textarea:focus{
     border-color: var(--brand-clr);
+}
+
+.btn-primary:disabled {
+    background-color: grey;
+
+}
+
+.btn-modal-buy {
+    padding: 12px 28px;
+    background-color: gray;
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    
+}
+
+.btn-modal-buy:not([disabled]):hover {
+    transform: scale(1.1);
+}
+
+.btn-modal-buy:not([disabled]){
+    background-color: var(--brand-clr);
 }
