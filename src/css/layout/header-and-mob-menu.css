@@ -129,11 +129,14 @@
     line-height: 1.14;
 
     transition: color 250ms linear;
+    transition: scale 250ms linear;
   }
 
   .site-nav-link:focus,
   .site-nav-link:hover {
     color: var(--brand-clr);
+
+    scale: 1.1;
   }
 }
 
@@ -168,7 +171,7 @@
   .socials-link:hover > .socials-icon {
     stroke: var(--brand-clr);
 
-    scale: 1.2;
+    scale: 1.1;
   }
 
   .socials-icon {
@@ -179,7 +182,7 @@
 
     transition: stroke 250ms linear;
 
-    transition: scale 300ms linear;
+    transition: scale 250ms linear;
   }
 }
 
