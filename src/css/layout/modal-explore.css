@@ -60,14 +60,21 @@
       
     width: 24px;
     height: 24px;
+
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
 }
 
 @media screen and (min-width: 768px){
 .close-explore-icon{
-    width: 14px;
-    height: 14px;
+    width: 28px;
+    height: 28px;
     }
+}
+
+.close-explore-icon:hover, .close-explore-icon:focus{
+    stroke: var(--brand-clr);
+    transform: scale(1.2)
 }
 
 .container-modal-explore{
@@ -119,7 +126,13 @@
         height: 52px;
         filter: none;
         border-radius: 30px;
+
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
      }
+}
+
+.modal-explore-input:focus{
+    border-color: var(--brand-clr);
 }
 
 .modal-explore-input::placeholder{
