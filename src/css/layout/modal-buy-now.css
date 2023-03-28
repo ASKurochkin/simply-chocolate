@@ -105,6 +105,15 @@
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
     background-color: var(--secondary-clr);
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px){
+.modal-buy-item:hover {
+    border-color: var(--brand-clr);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 }
 
 @media screen and (min-width: 768px){
@@ -121,7 +130,15 @@
 .modal-buy-images {
     width: 120px;
     height: 107px;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
+}
+
+@media screen and (min-width: 768px){
+.modal-buy-item:hover .modal-buy-images {
+    transform: scale(1.2);
+}
 }
 
 .modal-buy-text{

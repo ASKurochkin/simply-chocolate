@@ -8,3 +8,5 @@ import './js/modal-buy';
 import './js/modal-feedback';
 import './js/modal-review';
 import './js/modal-thank';
+
+import './js/form-validation';

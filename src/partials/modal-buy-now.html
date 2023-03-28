@@ -9,7 +9,7 @@
       </svg>
     </button>
 
-    <ul class="modal-buy-list">
+    <ul class="modal-buy-list responsive">
       <li class="modal-buy-item">
         <picture>
           <source
@@ -105,7 +105,7 @@
         >
         <div class="form-input-name-wrap">
           <input
-            class="form-buy-input"
+            class="form-buy-input input-js"
             id="username"
             type="text"
             name="username"
@@ -124,7 +124,7 @@
         </div>
         <label for="useremail" class="form-buy-label">Email </label>
         <input
-          class="form-buy-input imput-useremail"
+          class="form-buy-input imput-useremail input-js"
           id="useremail"
           type="email"
           name="useremail"
@@ -134,16 +134,15 @@
         <label for="userphone" class="form-buy-label">Phone number</label>
         <div class="form-buy-phone">
           <input
-            class="form-buy-input-phone form-buy-input"
+            class="form-buy-input-phone form-buy-input input-js"
             id="userphone"
             type="tel"
             name="userphone"
             placeholder="Phone number"
             required
-            pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            maxlength="12"
-            minlength="12"
-            title="xx-xxx-xx-xx"
+            pattern="[0-9]{2}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
+            maxlength="9"
+            minlength="9"
           />
           <div class="form-buy-icon-wrap">
             <svg class="form-buy-icon-phone">
@@ -155,7 +154,7 @@
         <label for="usercard" class="form-buy-label">Card number</label>
         <div class="form-buy-card">
           <input
-            class="form-buy-input form-buy-input-card"
+            class="form-buy-input form-buy-input-card input-js"
             id="usercard"
             type="text"
             name="usercard"
@@ -176,7 +175,14 @@
           placeholder="Enter text"
         ></textarea>
       </div>
-      <button type="submit" class="btn-primary" data-modal-ty-open>Submit</button>
+      <button
+        type="submit"
+        disabled
+        class="btn-primary button-js"
+        data-modal-ty-open
+      >
+        Submit
+      </button>
     </form>
   </div>
 </div>

@@ -17,7 +17,7 @@
   }
 }
 
-.slick-track {
+/* .slick-track {
   display: flex;
   gap: 16px;
 }
@@ -36,7 +36,7 @@
   .slick-dots {
     bottom: -44px;
   }
-}
+} */
 
 .reviews-title {
   text-align: center;
