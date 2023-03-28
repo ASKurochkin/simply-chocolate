@@ -1,0 +1,36 @@
+.up-button {
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+}
+.up-button-link {
+  position: relative;
+  top: -30px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  width: 45px;
+  height: 80px;
+  fill: var(--brand-clr);
+
+      	transition-property: background,scale,box-shadow;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+  .up-button-link:hover,
+  .up-button-link:focus {
+    scale: 1.2;
+    background-color: rgba(253, 146, 34,.2);
+    fill: var(--brand-clr);
+    box-shadow: rgba(253, 146, 34,1) 2px 0px 15px;
+  }
+
+.up-button-icon {
+  position: relative;
+  top: 20px;
+  left: 0;
+}
+
