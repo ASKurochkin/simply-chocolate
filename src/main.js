@@ -4,4 +4,5 @@ import './js/modal';
 import './js/how-its-made';
 import './js/up-button';
 import './js/anchor-scroll' ;
-import './js/how-its-made' ;
+import './js/how-its-made';
+import './js/form-validation';
