@@ -8,6 +8,7 @@
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+    overflow: auto;
   
     background-color: var(--backdrop-clr);
   
