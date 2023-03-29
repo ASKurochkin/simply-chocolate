@@ -25,6 +25,21 @@
       });
 })(window.Element.prototype);
 
+const form = document.querySelector('.modal-form-buy');
+const form2 = document.querySelector('.form-review');
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  form.reset();
+  document.querySelector('.modal-buy-now').classList.remove('active');
+  document.querySelector('.modal-thank-you').classList.add('active');
+});
+form2.addEventListener('submit', e => {
+  e.preventDefault();
+  form2.reset();
+  document.querySelector('.modal-review').classList.remove('active');
+  document.querySelector('.modal-feedback').classList.add('active');
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   /* Записываем в переменные массив элементов-кнопок и подложку.
       Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
