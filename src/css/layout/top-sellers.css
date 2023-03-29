@@ -30,11 +30,19 @@
   }
 }
 .top-sellers-image {
+  width: 100%;
+  height: auto;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .top-sellers-image {
     margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .top-sellers-item {
+    max-width: 100%;
   }
 }
 
@@ -52,7 +60,7 @@
 .top-sellers-image {
   border-radius: 15px;
 
-  transition: transform 300ms linear;
+  transition: transform 250ms linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -80,7 +88,7 @@
 }
 
 .top-sellers-text-wrapper {
-  width: 306px;
+  max-width: 306px;
 }
 
 @media screen and (min-width: 1200px) {
