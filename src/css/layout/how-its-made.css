@@ -56,7 +56,7 @@
 .video {
   background: url('../../images/play-video.svg') no-repeat center;
   width: 100%;
-  padding-top: 150%; /*height меняем на padding-top для тягучести*/
+  padding-top: 150%;
   border-radius: 15px;
   background-size: 10%;
 
