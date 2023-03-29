@@ -201,7 +201,7 @@
 
     padding-left: 18px;
 
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms linear;
 }
 
 @media screen and (min-width: 768px){
@@ -345,7 +345,7 @@
     padding: 14px 18px;
     margin-bottom: 18px;
 
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms linear;
 }
 
 @media screen and (min-width: 768px){
@@ -401,7 +401,7 @@
 .btn-modal-buy:not([disabled]):hover {
     background-color: var(--btn-secondary-clr);
     color: var(--brand-clr);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .btn-modal-buy:not([disabled]){
