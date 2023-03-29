@@ -17,23 +17,23 @@
   }
 }
 
-.slick-track {
+.reviews-list>.slick-list>.slick-track {
   display: flex;
   gap: 16px;
 }
 
 @media screen and (min-width: 1200px) {
-  .slick-track {
+  .reviews-list>.slick-list>.slick-track {
     gap: 28px;
   }
 }
 
-.slick-dots {
+.reviews-list>.slick-dots {
   bottom: -28px;
 }
 
 @media screen and (min-width: 768px) {
-  .slick-dots {
+  .reviews-list>.slick-dots {
     bottom: -44px;
   }
 }
