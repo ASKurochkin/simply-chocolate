@@ -35,14 +35,14 @@
 
     <!-- Styles -->
     
-    <script type="module" crossorigin src="/simply-chocolate/assets/index-5bfabd9a.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-2fa769a6.css">
+    <script type="module" crossorigin src="/simply-chocolate/assets/index-b854a317.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-1f59f93a.css">
   </head>
 
   <body>
     <!-- Header with mobile-menu-->
-    <header id="home">
-  <div class="container header-container">
+    <header>
+  <div class="container header-container" id="home">
     <nav class="main-nav">
       <!-- logo -->
       <a class="logo" href="./index.html"
@@ -63,7 +63,7 @@
       <!-- site-nav -->
       <ul class="site-nav-list">
         <li class="site-nav-item">
-          <a class="site-nav-link" href="/">Home</a>
+          <a class="site-nav-link" href="#home">Home</a>
         </li>
         <li class="site-nav-item">
           <a class="site-nav-link" href="#how-its-made">
@@ -105,7 +105,7 @@
     </div>
 
     <!-- mobile-menu -->
-    <div class="mobile-menu js-menu-container">
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
       <button class="mobile-close js-close-menu" type="button">
         <svg class="mobile-close-icon">
           <use href="/simply-chocolate/assets/icon-9abc3b27.svg#icon-close"></use>
@@ -117,7 +117,7 @@
       <nav class="mobile-menu-nav">
         <ul class="mobile-nav-list">
           <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="/">Home</a>
+            <a class="mobile-nav-link js-close-menu" href="#home">Home</a>
           </li>
           <li class="mobile-nav-item">
             <a class="mobile-nav-link" href="#how-its-made">
