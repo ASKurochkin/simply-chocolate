@@ -94,7 +94,6 @@
 }
 
 .advantage-description {
-  width: 308px;
+  max-width: 308px;
   color: rgba(255, 255, 255, 0.7);
 }
-
