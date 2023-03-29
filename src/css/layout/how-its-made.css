@@ -17,6 +17,7 @@
 }
 .made-container-wrapper {
   position: relative;
+  width: 100%;
 }
 
 .made-container {
@@ -150,13 +151,17 @@
 }
 
 .made-content-wrapper {
-  width: 335px;
-
   display: flex;
   flex-direction: column;
   gap: 20px;
 
   padding: 20px 14px;
+}
+
+@media screen and (max-width: 374px) {
+  .made-content-wrapper {
+    max-width: 335px;
+  }
 }
 
 @media screen and (min-width: 768px) {
