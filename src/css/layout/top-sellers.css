@@ -4,7 +4,6 @@
   }
 }
 
-
 .top-sellers .section-title {
   text-align: center;
   margin-bottom: 32px;
@@ -49,8 +48,17 @@
     flex-basis: calc((100% - 32px) / 3);
   }
 }
+
 .top-sellers-image {
   border-radius: 15px;
+
+  transition: transform 300ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .top-sellers-image:hover {
+    transform: scale(1.15);
+  }
 }
 
 .third-image {
@@ -72,9 +80,8 @@
 }
 
 .top-sellers-text-wrapper {
-    width: 306px;
-  }
-
+  width: 306px;
+}
 
 @media screen and (min-width: 1200px) {
   .top-sellers-text-wrapper {

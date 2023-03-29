@@ -128,12 +128,15 @@
     font-weight: 500;
     line-height: 1.14;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms linear;
+    transition: scale 250ms linear;
   }
 
   .site-nav-link:focus,
   .site-nav-link:hover {
     color: var(--brand-clr);
+
+    scale: 1.1;
   }
 }
 
@@ -167,6 +170,8 @@
   .socials-link:focus,
   .socials-link:hover > .socials-icon {
     stroke: var(--brand-clr);
+
+    scale: 1.1;
   }
 
   .socials-icon {
@@ -175,7 +180,9 @@
     stroke: var(--primary-clr);
     fill: transparent;
 
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke 250ms linear;
+
+    transition: scale 250ms linear;
   }
 }
 
@@ -259,8 +266,7 @@
   height: 16px;
   stroke: var(--secondary-clr);
 
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke 250ms linear, scale 250ms linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -285,7 +291,7 @@
 
   color: var(--secondary-clr);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -309,7 +315,7 @@
   background-color: var(--brand-clr);
 
   opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms linear;
 }
 
 .mobile-nav-link:hover::after {
@@ -353,7 +359,7 @@
   stroke: var(--secondary-clr);
   fill: transparent;
 
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke 250ms linear;
 }
 
 @media screen and (min-width: 768px) {

@@ -10,6 +10,8 @@
   color: var(--secondary-clr);
 
   background-color: var(--brand-clr);
+
+  transition: transform 250ms linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -24,6 +26,8 @@
   color: var(--brand-clr);
 
   background-color: var(--btn-secondary-clr);
+
+  transform: scale(1.1);
 }
 
 .btn-second {
@@ -38,6 +42,8 @@
   color: var(--secondary-clr);
 
   background-color: transparent;
+
+  transition: transform 250ms linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -52,6 +58,8 @@
   color: var(--brand-clr);
 
   border: 1px solid var(--brand-clr);
+
+  transform: scale(1.1);
 }
 
 .btn-third {
@@ -66,6 +74,8 @@
   color: var(--primary-clr);
 
   background-color: transparent;
+
+  transition: transform 250ms linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -81,4 +91,6 @@
   background-color: var(--brand-clr);
 
   border: none;
+
+  transform: scale(1.1);
 }
