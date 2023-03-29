@@ -1,5 +1,5 @@
-<header id="home">
-  <div class="container header-container">
+<header>
+  <div class="container header-container" id="home">
     <nav class="main-nav">
       <!-- logo -->
       <a class="logo" href="./index.html"
@@ -20,7 +20,7 @@
       <!-- site-nav -->
       <ul class="site-nav-list">
         <li class="site-nav-item">
-          <a class="site-nav-link" href="/">Home</a>
+          <a class="site-nav-link" href="#home">Home</a>
         </li>
         <li class="site-nav-item">
           <a class="site-nav-link" href="#how-its-made">
@@ -62,7 +62,7 @@
     </div>
 
     <!-- mobile-menu -->
-    <div class="mobile-menu js-menu-container">
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
       <button class="mobile-close js-close-menu" type="button">
         <svg class="mobile-close-icon">
           <use href="./images/icon.svg#icon-close"></use>
@@ -74,7 +74,7 @@
       <nav class="mobile-menu-nav">
         <ul class="mobile-nav-list">
           <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="/">Home</a>
+            <a class="mobile-nav-link js-close-menu" href="#home">Home</a>
           </li>
           <li class="mobile-nav-item">
             <a class="mobile-nav-link" href="#how-its-made">

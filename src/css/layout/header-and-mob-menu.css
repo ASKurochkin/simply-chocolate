@@ -200,6 +200,7 @@
   padding-right: 46px;
   padding-left: 50px;
   padding-bottom: 136px;
+  z-index: 3;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
