@@ -21,7 +21,7 @@
 
 @media screen and (min-width: 768px) {
   .modal-feedback {
-    width: 516px;
+    max-width: 516px;
     padding-top: 163px;
     padding-left: 170px;
     padding-bottom: 163px;
