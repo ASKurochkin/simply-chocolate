@@ -88,10 +88,18 @@
     
     }
 
+    
 .component-item { 
+    width: 280px;
+    height: 270px; 
+    } 
+
+@media screen and (min-width: 375px) {
+    .component-item { 
     width: 335px;
     height: 270px; 
     } 
+}
 
 @media screen and (min-width: 768px) {
     .component-item { 
@@ -173,7 +181,13 @@ color: var(--secondary-clr);
 
 
 .front-container{
-    padding: 28px 0 0 28px;
+    padding: 28px 0 0 14px;
+}
+
+@media screen and (min-width: 375px) {
+    .front-container{
+        padding: 28px 0 0 28px;
+    }
 }
 
 .front-container,
