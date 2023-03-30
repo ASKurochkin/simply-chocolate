@@ -1,6 +1,6 @@
 .modal-buy-now {
   position: absolute;
-  bottom: 50%;
+  bottom: 32%;
   right: 50%;
   transform: translate(50%, 50%);
 
@@ -17,6 +17,7 @@
 
 @media screen and (min-width: 768px) {
   .modal-buy-now {
+    bottom: 50%;
     max-width: 609px;
     height: 100%;
     max-height: 1059px;
