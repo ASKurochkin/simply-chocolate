@@ -32,10 +32,19 @@
 .top-sellers-image {
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .top-sellers-image {
+  }
+}
+
+.sellers-decor {
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .sellers-decor {
     margin-bottom: 32px;
   }
 }
