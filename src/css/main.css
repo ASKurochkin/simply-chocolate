@@ -14,11 +14,15 @@
 @import url('./components/backdrop.css');
 @import url('./components/titles.css');
 @import url('./components/buttons.css');
-/* slik */
+
+/* sliсk */
 @import url('./components/slick.css');
 
 /* up-button */
 @import url('./components/up-button.css');
+
+/* gallery */
+@import url('./components/gallery.css');
 
 
 /* Layout */
