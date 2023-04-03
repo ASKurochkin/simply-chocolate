@@ -1,8 +1,3 @@
-@media screen and (min-width: 1200px) {
-  .container.top-sellers-container {
-    margin-bottom: 72px;
-  }
-}
 
 .top-sellers .section-title {
   text-align: center;
@@ -14,47 +9,25 @@
   }
 }
 
-.top-sellers-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  position: relative;
-}
-
 @media screen and (min-width: 768px) {
   .top-sellers-list {
     flex-direction: row;
     column-gap: 16px;
     align-items: flex-start;
   }
-}
-
-.sellers-decor {
-  overflow: hidden;
-  border-radius: 15px;
-  margin-bottom: 20px;
-}
-@media screen and (min-width: 768px) {
-  .sellers-decor {
-    margin-bottom: 32px;
+  
+  .top-cellers-content {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
-@media screen and (max-width: 375px) {
-  .top-sellers-item {
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .top-sellers-item {
-    flex-basis: calc((100% - 16px) / 2);
-  }
+.sellers-decor.third-image {
+  display: none;
 }
 @media screen and (min-width: 1200px) {
-  .top-sellers-item {
-    flex-basis: calc((100% - 32px) / 3);
+  .sellers-decor.third-image {
+    display: block;
   }
 }
 
@@ -62,7 +35,6 @@
   width: 100%;
   height: auto;
   border-radius: 15px;
-
   transition: transform 250ms linear;
 }
 
@@ -72,28 +44,39 @@
   }
 }
 
-.third-image {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .third-image {
-    display: block;
-  }
-}
-
-.top-sellers-box {
-  text-align: center;
+.sellers-decor {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
-  .top-sellers-box {
-    text-align: right;
+  .sellers-decor {
+    width: calc((100% - 16px) / 2);
+    margin-bottom: 32px;
+  }
+
+  .sellers-decor:not(:first-child) {
+    margin-left: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sellers-decor {
+    max-width: calc((100% - 32px) / 3);
   }
 }
 
 .top-sellers-text-wrapper {
   max-width: 306px;
+  margin-bottom: 32px;
 }
-
+@media screen and (min-width: 768px) {
+  .top-sellers-text-wrapper {
+    order: 1;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .top-sellers-text-wrapper {
     position: absolute;
@@ -103,15 +86,10 @@
 
 @media screen and (min-width: 768px) {
   .top-sellers-button {
+    order: 2;
     min-width: 162px;
     height: 50px;
     font-size: 18px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .top-sellers-button {
-    position: absolute;
-    right: 0;
-  }
-}
