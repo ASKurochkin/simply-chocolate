@@ -29,14 +29,6 @@
     align-items: flex-start;
   }
 }
-.top-sellers-image {
-  width: 100%;
-  height: auto;
-}
-@media screen and (min-width: 768px) {
-  .top-sellers-image {
-  }
-}
 
 .sellers-decor {
   overflow: hidden;
@@ -67,6 +59,8 @@
 }
 
 .top-sellers-image {
+  width: 100%;
+  height: auto;
   border-radius: 15px;
 
   transition: transform 250ms linear;
@@ -103,7 +97,7 @@
 @media screen and (min-width: 1200px) {
   .top-sellers-text-wrapper {
     position: absolute;
-    width: 407px;
+    max-width: 407px;
   }
 }
 
