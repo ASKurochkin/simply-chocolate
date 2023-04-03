@@ -10,6 +10,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  .top-sellers-list {
+    flex-direction: row;
+    column-gap: 16px;
+    align-items: flex-start;
+  }
+  
   .top-cellers-content {
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +32,8 @@
 }
 
 .top-sellers-image {
+  width: 100%;
+  height: auto;
   border-radius: 15px;
   transition: transform 250ms linear;
 }
@@ -71,7 +79,8 @@
 }
 @media screen and (min-width: 1200px) {
   .top-sellers-text-wrapper {
-   max-width: 407px;
+    position: absolute;
+    max-width: 407px;
   }
 }
 
